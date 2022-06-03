@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prueba RnB</title>
+</head>
+
+<body>
+    <!-- header content-->
+    <header>
+
+        <div class="header-logo-desktop-container">
+            <img class="header-logo-desktop" src="desktop-imgs/logos-burbjas.svg" alt="">
+        </div>
+        <div class="header-logo-container">
+            <img class="header-logo-2" src="mobile-imgs/Vector.svg" alt="">
+            <img class="header-logo" src="mobile-imgs/Group 703.svg" alt="">
+        </div>
+        <h1 class="header-title">
+            Tiendas con las que trabajamos
+        </h1>
+        <p class="header-description">
+            Lorem ipsum dolor sit amet, consectetur adisicing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet. Ut risus volutpat enim sapien ac. Lacus in volutpat maecenas commodo ac mi.
+        </p>
+
+    </header>
+    <!-- header content-->
+    <!-- search bar content-->
+    <section #search-bar>
+        <div class="search-bar">
+            <form action="#">
+                <button type="submit"><img src="general-imgs/Group 700.svg" alt=""></button>
+                <input id="input-search-bar" type="text" placeholder="Busca una tienda..." name="search">
+                <button id="cancelBtn" onclick="limpearSearchBar()" type="cancel"><img src="general-imgs/Vector.svg" alt=""></button>
+            </form>
+        </div>
+    </section>
+    <!-- search bar content-->
+    <!-- main content-->
+
+    <main class="main">
+        <!-- dise?o de la carta-->
+        <div class="card">
+            <figure class="card-content">
+                <div class="figure-header">
+                    <ul class="hashtag-list">
+                        <li class="hashtag-list-item star"><a href="#" class="star star-icon">Popular</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Teléfonos</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Tecnología</a></li>
+                    </ul>
+                    <img class="card-img" src="general-imgs/apple-card-img.svg " alt="">
+                </div>
+                <figcaption>
+                    <h1 class="figcaption-title">Wallmart</h1>
+                    <!-- el siguente tag no sera visible en el di?eso mobile solo cuando cuando
+                         la pantalla sea mayor a 769px-->
+                    <p class="figcaption-description">wallmart.com</p>
+                    <ul class="figcaption-list">
+                        <li><a class="figcaption-verMas verinfo" href="#">Ver info<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+                        <!-- el siguente tag no sera visible en el di?eso mobile solo cuando cuando
+                             la pantalla sea mayor a 769px.
+                            Esto pasara con todas las cartas que contengan la opcion de ofertas.
+                            -->
+                        <li><a class="figcaption-verMas verofertas" href="#">Ver ofertas<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+                    </ul>
+                </figcaption>
+
+            </figure>
+        </div>
+        <!--final dise?o de la carta-->
+        <div class="card">
+            <figure>
+                <div class="figure-header">
+                    <ul class="hashtag-list">
+                        <li class="hashtag-list-item star"><a href="#" class="star star-icon">Popular</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Deporte</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Atletico</a></li>
+                    </ul>
+                    <img class="card-img" src="general-imgs/nike-card-img.svg" alt="">
+                </div>
+                <figcaption>
+                    <h1 class="figcaption-title">Nike</h1>
+                    <p class="figcaption-description">Lorem ipsum dolor sit amet.</p>
+
+                    <ul class="figcaption-list">
+                        <li><a class="figcaption-verMas verinfo" href="#">Ver info<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+                        <li><a class="figcaption-verMas verofertas" href="#">Ver ofertas<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+                    </ul>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <figure>
+                <div class="figure-header">
+                    <ul class="hashtag-list">
+                        <li class="hashtag-list-item star"><a href="#" class="star star-icon">Popular</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">General</a></li>
+                    </ul>
+                    <img class="card-img" src="general-imgs/amazon-card-img.svg" alt="">
+                </div>
+                <figcaption>
+                    <h1 class="figcaption-title">Amazon</h1>
+                    <p class="figcaption-description">Lorem ipsum dolor sit amet.</p>
+                    <ul class="figcaption-list">
+                        <li><a class="figcaption-verMas verinfo" href="#">Ver info<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+
+                        <li><a class="figcaption-verMas verofertas" href="#">Ver ofertas<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+                    </ul>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <figure>
+                <div class="figure-header">
+                    <ul class="hashtag-list">
+                        <li class="hashtag-list-item star"><a href="#" class="star star-icon">Popular</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Zapatillas</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Deporte</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Atlético</a></li>
+
+                    </ul>
+                    <img class="card-img" src="general-imgs/adidas-card-img.svg" alt="">
+                </div>
+                <figcaption>
+                    <h1 class="figcaption-title">Adidas</h1>
+                    <p class="figcaption-description">Lorem ipsum dolor sit amet.</p>
+                    <ul class="figcaption-list">
+                        <li><a class="figcaption-verMas verinfo" href="#">Ver info<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+
+                    </ul>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <figure>
+                <div class="figure-header">
+                    <ul class="hashtag-list">
+                        <li class="hashtag-list-item"><a href="#" class="general">Teléfonos</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Tecnología</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Computadoras</a></li>
+
+                    </ul>
+                    <img class="card-img" src="general-imgs/apple-card-img.svg " alt="">
+                </div>
+                <figcaption>
+                    <h1 class="figcaption-title">Wallmart</h1>
+                    <p class="figcaption-description">Lorem ipsum dolor sit amet.</p>
+                    <ul class="figcaption-list">
+                        <li><a class="figcaption-verMas verinfo" href="#">Ver info<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+
+                    </ul>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <figure>
+                <div class="figure-header">
+                    <ul class="hashtag-list">
+                        <li class="hashtag-list-item"><a href="#" class="general">Deporte</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Atletico</a></li>
+                    </ul>
+                    <img class="card-img" src="general-imgs/nike-card-img.svg" alt="">
+                </div>
+                <figcaption>
+                    <h1 class="figcaption-title">Nike</h1>
+                    <p class="figcaption-description">Lorem ipsum dolor sit amet.</p>
+
+                    <ul class="figcaption-list">
+                        <li><a class="figcaption-verMas verinfo" href="#">Ver info<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+
+                    </ul>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <figure>
+                <div class="figure-header">
+                    <ul class="hashtag-list">
+                        <li class="hashtag-list-item"><a href="#" class="general">General</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Estilo de vida</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Todo</a></li>
+                    </ul>
+                    <img class="card-img" src="general-imgs/amazon-card-img.svg" alt="">
+                </div>
+                <figcaption>
+                    <h1 class="figcaption-title">Amazon</h1>
+                    <p class="figcaption-description">Lorem ipsum dolor sit amet.</p>
+                    <ul class="figcaption-list">
+                        <li><a class="figcaption-verMas verinfo" href="#">Ver info<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+                        <li><a class="figcaption-verMas verofertas" href="#">Ver ofertas<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+                    </ul>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <figure>
+                <div class="figure-header">
+                    <ul class="hashtag-list">
+                        <li class="hashtag-list-item"><a href="#" class="general">Deporte</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Atlético</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Zapatillas</a></li>
+                    </ul>
+                    <img class="card-img" src="general-imgs/adidas-card-img.svg" alt="">
+                </div>
+                <figcaption>
+                    <h1 class="figcaption-title">Adidas</h1>
+                    <p class="figcaption-description">Lorem ipsum dolor sit amet.</p>
+                    <ul class="figcaption-list">
+                        <li><a class="figcaption-verMas verinfo" href="#">Ver info<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+                        <li><a class="figcaption-verMas verofertas" href="#">Ver ofertas<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+                    </ul>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <figure>
+                <div class="figure-header">
+                    <ul class="hashtag-list">
+                        <li class="hashtag-list-item"><a href="#" class="general">Teléfonos</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Tecnología</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Computadoras</a></li>
+
+                    </ul>
+                    <img class="card-img" src="general-imgs/apple-card-img.svg " alt="">
+                </div>
+                <figcaption>
+                    <h1 class="figcaption-title">Wallmart</h1>
+                    <p class="figcaption-description">Lorem ipsum dolor sit amet.</p>
+                    <ul class="figcaption-list">
+                        <li><a class="figcaption-verMas verinfo" href="#">Ver info<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+
+                    </ul>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <figure>
+                <div class="figure-header">
+                    <ul class="hashtag-list">
+                        <li class="hashtag-list-item"><a href="#" class="general">Deporte</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Atletico</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Zapatillas</a></li>
+
+                    </ul>
+                    <img class="card-img" src="general-imgs/nike-card-img.svg" alt="">
+                </div>
+                <figcaption>
+                    <h1 class="figcaption-title">Nike</h1>
+                    <p class="figcaption-description">Lorem ipsum dolor sit amet.</p>
+
+                    <ul class="figcaption-list">
+                        <li><a class="figcaption-verMas verinfo" href="#">Ver info<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+
+                    </ul>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <figure>
+                <div class="figure-header">
+                    <ul class="hashtag-list">
+                        <li class="hashtag-list-item"><a href="#" class="general">General</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Estilo de vida</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Todo</a></li>
+                    </ul>
+                    <img class="card-img" src="general-imgs/amazon-card-img.svg" alt="">
+                </div>
+                <figcaption>
+                    <h1 class="figcaption-title">Amazon</h1>
+                    <p class="figcaption-description">Lorem ipsum dolor sit amet.</p>
+                    <ul>
+                        <li><a class="figcaption-verMas verinfo" href="#">Ver info<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+                    </ul>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <figure>
+                <div class="figure-header">
+                    <ul class="hashtag-list">
+                        <li class="hashtag-list-item"><a href="#" class="general">Deporte</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Atlético</a></li>
+                        <li class="hashtag-list-item"><a href="#" class="general">Zapatillas</a></li>
+                    </ul>
+                    <img class="card-img" src="general-imgs/adidas-card-img.svg" alt="">
+                </div>
+                <figcaption>
+                    <h1 class="figcaption-title">Adidas</h1>
+                    <p class="figcaption-description">Lorem ipsum dolor sit amet.</p>
+                    <ul>
+                        <li><a class="figcaption-verMas verinfo" href="#">Ver info<img class="figcaption-verMas-icon" src="general-imgs/Arrow.svg"></a></li>
+                    </ul>
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+    <!-- final Main content-->
+    <script src="script.js"></script>
+
+    <!-- verMas content-->
+    <section id="verMas">
+        <a class="verMas-text" onclick="mostrarMas()">
+            <span>Ver más</span>
+            <img class="verMas-icon" src="general-imgs/flecha.svg">
+        </a>
+    </section>
+    <!-- verMas content-->
+
+</body>
+
+</html>
