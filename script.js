@@ -1,5 +1,7 @@
+//creamos una variable para almacenar la carta
 const cardStores = document.querySelector(".main");
 
+//craacion de funcion con un parametro lista
 function createCard([hashtag1, hashtag2, hashtag3, img, title, desciption, verinfo, verofertas]) {
     let code = `
     <figure class="card-content">
@@ -21,6 +23,8 @@ function createCard([hashtag1, hashtag2, hashtag3, img, title, desciption, verin
               </figcaption>
         </figure>
         `;
+
+    //añadiendo nueva carta al html
     cardStores.innerHTML += code;
 }
 // creacion de 'argumento' lista para pasarla a la funcion
@@ -67,7 +71,12 @@ let item4 = [
 
 
 function mostrarMas() {
+
+    //for para desplegar 12 cartas cuando se haga click en ver mas
     for (var i = 0; i < 3; i++) {
+
+        //llamando funcion que crea la nueva carta, dependiendo de la informacion del argumento
+        //en este caso las hice en orden
         createCard(item1)
         createCard(item2)
         createCard(item3)
