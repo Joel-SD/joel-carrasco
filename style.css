@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato';
+}
+
+
+/* header section*/
+
+header {
+    position: relative;
+    min-height: 725px;
+    color: #fff;
+    background: linear-gradient(87.99deg, #006EF2 3.65%, #01AEFA 121.61%);
+    z-index: -1;
+}
+
+.header-logo-desktop {
+    display: none;
+}
+
+.header-title,
+.header-description {
+    padding: 0 15px 0 15px;
+}
+
+.header-logo-container {
+    position: relative;
+}
+
+.header-logo {
+    position: relative;
+    width: 100%;
+    margin-bottom: -15px;
+}
+
+.header-logo-2 {
+    position: absolute;
+    top: 21px;
+    width: 100%;
+}
+
+.header-title {
+    min-width: 290px;
+    height: 80px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.header-description {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    padding-bottom: 50px;
+}
+
+
+/* final header section*/
+
+
+/* search bar section */
+
+.search-bar {
+    position: relative;
+    top: -25px;
+    width: 90%;
+    max-width: 784px;
+    height: 51px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.header-description,
+.header-title {
+    position: relative;
+}
+
+button,
+input {
+    background: none;
+    border-style: none;
+}
+
+input {
+    width: 70%;
+    text-align: left;
+    font-style: normal;
+    color: #8298AB;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/* final search bar section */
+
+
+/* main section*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+figure {
+    width: 150px;
+    height: 222px;
+}
+
+.figure-header {
+    position: relative;
+    height: 160px;
+    width: 100%;
+    padding: 6px 6px 0 6px;
+    background: url("general-imgs/background-card-img.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+li .start {
+    background: #304659;
+}
+
+.hashtag-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 8.6px;
+    row-gap: 5px;
+}
+
+.hashtag-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 6px;
+    width: auto;
+    height: 26px;
+    border-radius: 33.8205px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    background: #E1E9F0;
+    border-radius: 33.8205px;
+}
+
+.general {
+    color: #3B5266;
+}
+
+.star {
+    color: #ffffff;
+    background: #304659;
+}
+
+.star-icon {
+    background: url("general-imgs/Star.svg") no-repeat;
+    padding-left: 12px;
+    background-position-y: center;
+}
+
+.card-img {
+    position: absolute;
+    width: 69px;
+    height: 45px;
+    left: 42px;
+    top: 80px;
+}
+
+
+/* dise?o de hover para las cartas*/
+
+.figure-header::after {
+    display: flex;
+    align-items: flex-end;
+    content: 'Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet.';
+    padding: 0 10px;
+    padding-bottom: 10px;
+    width: 130px;
+    height: 150px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(48, 70, 89, 0) 0%, #304659 100%);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #fff;
+    left: 0;
+    top: 0;
+    transition: 0.4s ease;
+    opacity: 0;
+}
+
+.figure-header:hover::after {
+    opacity: 1;
+}
+
+
+/* dise?o de hover para las cartas*/
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    height: 62px;
+    border: 0.5px solid #8298AB;
+}
+
+.figcaption-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 14px;
+    text-align: center;
+    color: #304659;
+}
+
+.figcaption-description {
+    display: none;
+    width: 223px;
+    height: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #3B5266;
+}
+
+.figcaption-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.figcaption-verMas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 4.59px;
+    width: 95px;
+    height: 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 14px;
+    color: #8298AB;
+}
+
+.verofertas {
+    display: none;
+}
+
+
+/* main section*/
+
+
+/* ver mas section*/
+
+#verMas {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.verMas-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-style: normal;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    color: #006EF2;
+    width: 144px;
+    height: 25px;
+}
+
+.verMas-text:hover {
+    cursor: pointer;
+}
+
+.verMas-icon {
+    position: relative;
+    top: 8px;
+    width: 25px;
+    height: 35px;
+}
+
+
+/* final ver mas section*/
+
+
+/* responsive 446px*/
+
+@media only screen and (min-width: 446px) {
+    header {
+        text-align: center;
+        min-height: 355px;
+        max-height: 355px;
+        padding-left: 20px;
+        padding-right: 20px;
+        overflow: hidden;
+    }
+    .header-logo-desktop {
+        display: block;
+        position: absolute;
+        min-width: 1440px;
+        width: 100%;
+        height: 355px;
+        min-height: 100%;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+        opacity: 0.25;
+    }
+    .header-logo-desktop-container {
+        margin: auto;
+    }
+    .header-logo-desktop-container::after {
+        left: 0;
+        top: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: linear-gradient(90deg, #ffffff00 0%, rgba(0, 0, 0, 0.2) 26.04%, rgba(0, 0, 0, 0.299) 49.48%, rgba(0, 0, 0, 0.2) 75%, #95949400 100%);
+    }
+    .header-logo-container {
+        display: none;
+    }
+    .header-title {
+        padding-top: 65px;
+        height: auto;
+    }
+    .header-description {
+        max-width: 750px;
+        height: 50px;
+        padding: 0 0;
+        margin: 30px auto 0 auto;
+    }
+}
+
+
+/* final responsive <446px*/
+
+
+/* responsive 769px*/
+
+@media only screen and (min-width: 769px) {
+    /* search section 769px*/
+    .search-bar {
+        top: -120px;
+    }
+    form {
+        justify-content: space-evenly;
+    }
+    input {
+        width: 85%;
+    }
+    /* final search section 769px*/
+    /* main section 769px*/
+    main {
+        gap: 50px;
+        padding: 0 30px;
+    }
+    figure {
+        width: 263px;
+        height: 415px;
+    }
+    .figure-header {
+        width: 100%;
+        height: 280px;
+    }
+    .hashtag-list {
+        padding: 5px 5px;
+        gap: 10px;
+    }
+    .hashtag-list-item {
+        height: 42px;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 25px;
+        padding: 8px 10px;
+    }
+    .star-icon {
+        padding-left: 20px;
+        background-size: 16px 16px;
+    }
+    .card-img {
+        width: 100px;
+        height: 122px;
+        left: 82px;
+        top: 118px;
+    }
+    /* dise?o de hover para las cartas <769px*/
+    .figure-header::after {
+        display: flex;
+        align-items: flex-end;
+        content: 'Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sollicitudin consectetur pellentesque risus tellus aliquet.';
+        padding: 0 20px;
+        padding-bottom: 20px;
+        width: 221px;
+        height: 260px;
+        position: absolute;
+        background: linear-gradient(180deg, rgba(48, 70, 89, 0) 0%, #304659 100%);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25px;
+        color: #fff;
+        left: 0;
+        top: 0;
+        transition: 0.4s ease;
+        opacity: 0;
+    }
+    .figure-header:hover::after {
+        opacity: 1;
+    }
+    /* final dise?o de hover para las cartas <769px*/
+    figcaption {
+        width: 100%;
+        height: 135px;
+        padding: 20px 20px;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .figcaption-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .figcaption-description {
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25px;
+        color: #3B5266;
+    }
+    .figcaption-list {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .figcaption-verMas {
+        width: auto;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 25px;
+        color: #304659;
+    }
+    .figcaption-verMas-icon {
+        width: 8px;
+        height: 12px;
+        filter: invert(21%) sepia(49%) saturate(424%) hue-rotate(166deg) brightness(8%) contrast(87%);
+    }
+    .verofertas {
+        display: flex;
+    }
+    /* final main section 769px*/
+}
+
+
+/*final  media querys para 768*/
+
+
+/* media querys para 1440*/
+
+@media only screen and (min-width: 1440px) {
+    .header-title {
+        height: 54px;
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .header-description {
+        margin-top: 80px;
+    }
+}
+
+
+/* final media querys para 1440*/
